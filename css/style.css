@@ -1,0 +1,790 @@
+@import url(font.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: 'Monoid', serif;
+
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#section1 {
+    height: 953px;
+    align-items: center;
+}
+#section2 {
+    height: 1282px;
+}
+#section3 {
+    height: 1446px;
+}
+#section4 {
+    height: 1431px;
+}
+#section5{
+    height: 1100px;
+}
+#section6{
+    height: 2705px;
+}
+#section7{
+    height: 1407px;
+    background-color: white;
+}
+#section8{
+    height: 911px;
+}
+.examples_afisha{
+    position: relative;
+    rotate: -6.56deg;
+    left: 55px;
+    top: 46px;
+    width: 515px;
+    height: 672px;
+}
+.examples_book{
+    position: relative;
+    rotate: 9.17°;
+    left: 832px;
+    top: 709px;
+    width: 436px;
+    height: 622px;
+
+}
+.outlines_section{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 443px;
+}
+#outlines_section_regular{
+    left: 232px;
+    font-style: normal;
+}
+#outlines_section_retina{
+    left: 519px;
+    font-weight: 300;
+}
+#outlines_section_bold{
+    left: 815px;
+    font-weight: bold;
+}
+#outlines_section_italic{
+    left: 1064px;
+    font-style: italic;
+}
+.chess-up {
+    z-index: 0;
+    position: absolute;
+}
+
+.first_hand_1 {
+    z-index: 0;
+    display: flex;
+    position: absolute;
+    left: -20px;
+    top: -94px;
+}
+
+.animForHand {
+    animation: rotateHand1 3s ease-in-out infinite alternate;
+}
+
+@keyframes rotateHand1 {
+    0% {
+        transform-origin: center left;
+        rotate: 0deg;
+    }
+    100% {
+        transform-origin: center left;
+        rotate: -3deg;
+    }
+}
+
+.first_hand_2 {
+    z-index: 0;
+    display: flex;
+    position: absolute;
+    left: 941px;
+    top: 536px;
+    animation: rotatepawn 3s ease-in-out infinite alternate;
+}
+
+@keyframes rotatepawn {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        transform: translate(40px, -40px);
+        rotate: 7deg;
+
+    }
+}
+
+.first_hand_text {
+    color: black;
+    position: absolute;
+    z-index: 1;
+    top: 196px;
+    left: 30px;
+    width: 795px;
+    height: 159px;
+}
+
+.first_hand_text2 {
+    position: absolute;
+    z-index: 1;
+    top: 690px;
+    left: 30px;
+    width: 648px;
+    height: 265px;
+}
+.second_hand{
+    position: absolute;
+    z-index: 0;
+    left: 177px;
+
+}
+.img_pawn{
+    position: absolute;
+    width: 62px;
+    height: 143px;
+    top: 1110px;
+    left: 58px   ;
+}
+.img_outlines{
+    z-index: 0;
+    display: flex;
+}
+.img_glyphs{
+    z-index: 0;
+}
+.img_switch{
+    z-index: 0;
+}
+.img_end{
+    z-index: 0;
+}
+.img_examples_afisha{
+    position: absolute;
+    left: 27px;
+    top: -14px;
+    rotate: -6.56deg;
+    z-index: 0;
+}
+
+.img_mini_hand_glyphs{
+    position: absolute;
+    left: 1207px;
+    top: 49px;
+    width: 233px;
+    height: 195px;
+}
+.img_switchFigure_1, .img_switchFigure_2, .img_switchFigure_3, .img_switchFigure_4, .img_switchFigure_5, .img_switchFigure_6 {
+    position: absolute;
+}
+.img_switchFigure_1{
+    left: 696px;
+    top: 1729px;
+}
+.img_switchFigure_2{
+    left: 1165px;
+    top: 1685px;
+}
+.img_switchFigure_3{
+    left: 874px;
+    top: 2005px;
+}
+.img_switchFigure_4{
+    left: 1158px;
+    top: 2117px;
+}
+.img_switchFigure_5{
+    left: 640px;
+    top: 2235px;
+}
+.img_switchFigure_6{
+    left: 960px;
+    top: 2373px;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: none;
+    border-bottom: 5px dotted white;
+}
+
+.outlines_main{
+    position: absolute;
+    left: 397px;
+    top: 129px;
+    font-size: 40px;
+    align-items: center;
+}
+.outlines_text{
+    font-size: 40px;
+    position: absolute;
+   width: 1000px;
+}
+#outlines_text_regular{
+    top: 768px;
+    left: 283px;
+    font-style: normal;
+}
+#outlines_text_retina{
+    top: 911px;
+    left: 321px;
+    font-weight: 300px;
+}
+#outlines_text_bold{
+    top: 1047px;
+    left: 381px;
+    font-weight: bold;
+}
+#outlines_text_italic{
+    top: 1190px;
+    left: 177px;
+    font-style: italic;
+}
+/*.paragraph {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 8px;*/
+/*}*/
+
+h1 {
+    position: absolute;
+    top: 382px;
+    font-size: 198px;
+    letter-spacing: 0.26em;
+    color: white;
+    z-index: 1;
+    animation: letterSpacingH1 4s ease-in-out alternate infinite;
+}
+
+@keyframes letterSpacingH1 {
+    0% {
+        letter-spacing: 0.26em;
+    }
+    100% {
+        letter-spacing: 0.16em;
+    }
+}
+
+p {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 36px;
+}
+.letter_1, .letter_2, .letter_3, .letter_4, .letter_5, .letter_6, .letter_7, .letter_8{
+    font-size: 63px;
+    position: absolute;
+    
+}
+.letter_1{  /* д */
+    rotate: 3deg;
+    left: 183px;
+    top: 808px
+}
+.letter_2{  /* и */
+    left: 227px;
+    top: 787px
+}
+.letter_3{  /* з */
+    rotate: -4deg;
+    left: 263px;
+    top: 786px
+}
+.letter_4{  /* а */
+    rotate: -4deg;
+    left: 301px;
+    top: 806px;
+}
+.letter_5{  /* й */
+    rotate: -10deg;
+    left: 336.5px;
+    top: 772px;
+}
+.letter_6{  /* н */
+    rotate: -5deg;
+    left: 380.8px;
+    top: 776px;
+}
+.letter_7{  /* о */
+    left: 585px;
+    top: 757px;
+}
+.letter_8{  /* т */
+    rotate: 10deg;
+    left: 628px;
+    top: 804px;
+}
+.read-more {
+    position: absolute;
+    left:  150px; ;
+    top: 1174px;
+}
+.outlines{
+    z-index: 1;
+    top: -1350px;
+}
+.start-info {
+    left: 374px;
+    top: 646px;
+    width: 692px;
+    letter-spacing: 0.26em;
+    position: absolute;
+}
+.author{
+    width: 547px;
+    position: absolute;
+    left: 863px;
+    font-weight: bold;
+    top: 987px;
+    font-size: 63px;
+
+}
+.author_contact{
+    position: absolute;
+    left: 1071px;
+    top: 1097px;
+
+}
+.mini_figures{
+    position: absolute;
+    flex-direction: row;
+    top: 332px;
+}
+#mini_queen{
+    left: 267px;
+}
+#mini_king{
+    left: 552px;
+}
+#mini_rook{
+    left: 824px;
+}
+#mini_bishop{
+    left: 1097px;
+}
+.end_name{
+    position: absolute;
+    font-size: 50px;
+    left: 152px;
+    top: 727px;
+    font-weight: bold;
+    color: black;
+}
+.end_classname{
+    position: absolute;
+    left: 152px;
+    top: 801px;
+    font-size: 43px;
+    font-weight: bold;
+    color: black;
+}
+.afisha_text_1, .afisha_text_2, .afisha_text_3, .afisha_text_4, .afisha_text_5, .chess_day, .main_prize, .prize, .entrance, .place{
+    color: black;
+}
+.chess_day, .main_prize, .prize, .entrance, .place{
+    font-weight: bold;
+}
+.world{
+    position: absolute;
+    left: 252px;
+    top: 77px;
+    color: white;
+    font-size: 26px;
+    font-weight: 300;
+
+}
+.chess_day{
+    position: absolute;
+    font-size: 42px;
+    width: 255px;
+    left: 240px;
+    top: 125px;
+}
+.eleven_october{
+    position: absolute;
+    left: 301px;
+    top: 260px;
+    width: 250px;
+    font-size: 27px;
+}
+.main_prize{
+    position: absolute;
+    left: 214px;
+    width: 138px;
+    top: 345px;
+    font-size: 21px;
+}
+.prize{
+    position: absolute;
+    left: 294px;
+    top: 325px;
+    font-size: 31px;
+}
+.afisha_text_1{
+    position: absolute;
+    font-size: 12px;
+    left: 269px;
+    top: 400px;
+    width: 212px;
+}
+.entrance{
+    position: absolute;
+    left: 248px;
+    top: 446px;
+    font-size: 15px;
+}
+.entrance_price{
+    position: absolute;
+    left: 461px;
+    top: 437px;
+    font-size: 19px;
+}
+.afisha_text_2{
+    position: absolute;
+    left: 275px;
+    top: 470px;
+    width: 187px;
+    font-size: 12px;
+}
+.place{
+    position: absolute;
+    left: 105px;
+    top: 616px;
+    font-size: 18px;
+}
+.afisha_text_3{
+    position: absolute;
+    left: 181px;
+    top: 592px;
+    font-size: 8px;
+    font-style: italic;
+}
+.afisha_text_4{
+    position: absolute;
+    left: 109px;
+    top: 652px;
+    font-style: italic;
+    font-size: 8px;
+}
+.afisha_text_5{
+    position: absolute;
+    left: 271px;
+    top: 621px;
+    font-size: 8px;
+    font-style: italic;
+}
+.glyphs{
+    position: absolute;
+    font-size: 63px;
+    width: 48px;
+    height: 75px;
+}
+#glyphs_Љ, #glyphs_Л, #glyphs_Ф, #glyphs_Ľ, #glyphs_Į, #glyphs_¤, #glyphs_Ť, #glyphs_, #glyphs_½{
+    color: black;
+}
+#glyphs_Г, #glyphs_Л, #glyphs_И, #glyphs_Ф, #glyphs_Ы{
+    top: 414px;
+}
+#glyphs_Ľ, #glyphs_œ, #glyphs_Į, #glyphs_☠, #glyphs_and{
+    top: 527px;
+}
+#glyphs_¤, #glyphs_dot, #glyphs_Ť, #glyphs_‡, #glyphs_{
+    top: 640px;
+}
+#glyphs_, #glyphs_½, #glyphs_Δ, #glyphs_Ѳ{
+    top: 753px;
+}
+#glyphs_Љ{
+    left: 259px;
+    top: 301px;
+}
+#glyphs_Г{
+    left: 485px;
+    font-weight: bold;
+}
+#glyphs_Л {
+    left: 598px;
+    font-weight: bold;
+}
+#glyphs_И {
+    left: 711px;
+    font-style: italic;
+}
+#glyphs_Ф {
+    left: 824px;
+    font-weight: bold;
+}
+#glyphs_Ы {
+    left: 937px;
+}
+#glyphs_Ľ {
+    left: 259px;
+}
+#glyphs_œ {
+    left: 372px;
+}
+#glyphs_Į {
+    left: 937px;
+}
+#glyphs_☠ {
+    left: 1050px;
+}
+#glyphs_and{    /*&*/
+    left: 1276px;
+}
+#glyphs_¤ {
+    left: 146px;
+}
+#glyphs_dot {     /*@*/
+    left: 711px;
+}
+#glyphs_Ť {
+    left: 824px;
+}
+#glyphs_‡ {
+    left: 937px;
+}
+#glyphs_ {
+    left: 1163px;
+}
+#glyphs_ {
+    left: 259px;
+}
+#glyphs_½ {
+    left: 485px;
+}
+#glyphs_Δ {
+    left: 598px;
+}
+#glyphs_Ѳ {
+    left: 824px;
+}
+.specification_main,.specification_1,.specification_2,.specification_3, .specification_4{
+    position: absolute;
+    left: 63px;
+}
+.specification_main{
+    top: 132px;
+    font-size: 63px;
+    font-weight: bold;
+    width: 680px;
+}
+.specification_1{
+    top: 434px;
+    width: 791px;
+}
+.specification_2{
+    top: 749px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 641px;
+}
+.specification_3{
+    top: 842px;
+    width: 665px;
+}
+.specification_4{
+    top: 1029px;
+    width: 700px;
+}
+.languages_1, .languages_2, .languages_3, .languages_4, .languages_5, .languages_6{
+    position: absolute;
+    font-weight: bold;
+    font-size: 30px;
+}
+.languages_1{
+    left: 801px;
+    top: 1813px;
+    rotate: -72deg;
+}
+.languages_2{
+    left: 1223px;
+    top: 1820px;
+    rotate: -70deg;
+}
+.languages_3{
+    left: 933px;
+    top: 2050px;
+    rotate: -61deg;
+}
+
+.languages_4{
+    left: 1253px;
+    top: 2225px;
+    rotate: 60deg;
+}
+.languages_5{
+    left: 710px;
+    top: 2340px;
+    rotate: 74deg;
+}
+.languages_6{
+    left: 1024px;
+    top: 2456px;
+    rotate: -65deg;
+}
+.examples_rules_1{
+    position: relative;
+    left: 722px;
+    top: 46px;
+    width: 677px;
+    height: 551px;
+}
+.examples_rules_2{
+    position: relative;
+    left: 51px;
+    top: 300px;
+    width: 604px;
+    height: 527px;
+}
+.rules_mini_text{
+    color: #3F3F3F;
+    font-size: 21px;
+    font-weight: bold;
+    position: absolute;
+
+}
+#rules_mini_text_1{
+    left: 34px;
+    top: 18px;
+
+}
+#rules_mini_text_2{
+    left: 565px;
+    top: 18px;
+}
+#rules_mini_text_3{
+    left: 34px;
+    top: 18px;
+}
+#rules_mini_text_4{
+    left: 503px;
+    top: 18px;
+}
+.rules_title_1{
+    position: absolute;
+    left: 323px;
+    top: 91px;
+    font-size: 53px;
+    font-weight: bold;
+    color: black;
+}
+.rules_title_2{
+    position: absolute;
+    left: 159px;
+    top: 69px;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+.rules_main_text{
+    position: absolute;
+    color: black;
+    font-size: 17px;
+}
+#rules_main_text_1{
+    left: 292px;
+    top: 182px;
+    width: 329px;
+}
+#rules_main_text_2{
+    left: 292px;
+    top: 276px;
+    width: 348px;
+}
+#rules_main_text_3{
+    left: 362px;
+    top: 199px;
+    width: 227px;
+}
+#rules_main_text_4{
+    left: 106px;
+    top: 459px;
+    width: 410px;
+    font-size: 22px;
+}
+.book_author_1, .book_author_2, .game, .bones, .book_for{
+    font-weight: bold;
+}
+.book_author_1{
+    position: absolute;
+    left: 242px;
+    top: 34px;
+    font-size: 15px;
+    color: black;
+}
+.game{
+    position: absolute;
+    left: 90px;
+    top: 69px;
+    font-size: 100px;
+}
+.bones{
+    position: absolute;
+    left: 81px;
+    top: 201px;
+    font-size: 45px;
+}
+.book_text{
+    position: absolute;
+    font-style: italic;
+    font-size: 15px;
+    width: 222px;
+}
+#font_book_1{
+    left: 96px;
+    top: 277px;
+}
+#font_book_2{
+    left: 85px;
+    top: 356px;
+}
+#font_book_3{
+    left: 75px;
+    top: 437px;
+}
+.book_author_2{
+    position: absolute;
+    left: 23px;
+    top: 506px;
+    width: 147px;
+    font-size: 22px;
+}
+.book_for{
+    position: absolute;
+    left: 21px;
+    top: 590px;
+    font-size: 7px;
+    color: black;
+}
+
+
+
+
