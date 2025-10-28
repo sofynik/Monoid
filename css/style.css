@@ -57,16 +57,13 @@ body{
     rotate: -6.56deg;
     left: 55px;
     top: 46px;
-    width: 515px;
-    height: 672px;
+
 }
 .examples_book{
-    position: relative;
-    rotate: 9.17°;
-    left: 832px;
+    position: absolute;
+
+    left: 814px;
     top: 709px;
-    width: 436px;
-    height: 622px;
 
 }
 .outlines_section{
@@ -198,6 +195,13 @@ body{
     width: 233px;
     height: 195px;
 }
+.img_examples_book{
+    position: absolute;
+    left: 832px;
+    top: 760px;
+    width: 436px;
+    z-index: 0;
+}
 .img_switchFigure_1, .img_switchFigure_2, .img_switchFigure_3, .img_switchFigure_4, .img_switchFigure_5, .img_switchFigure_6 {
     position: absolute;
 }
@@ -309,12 +313,12 @@ p {
     top: 808px
 }
 .letter_2{  /* и */
-    left: 227px;
+    left: 230px;
     top: 787px
 }
 .letter_3{  /* з */
     rotate: -4deg;
-    left: 263px;
+    left: 265px;
     top: 786px
 }
 .letter_4{  /* а */
@@ -324,12 +328,12 @@ p {
 }
 .letter_5{  /* й */
     rotate: -10deg;
-    left: 336.5px;
+    left: 342px;
     top: 772px;
 }
 .letter_6{  /* н */
     rotate: -5deg;
-    left: 380.8px;
+    left: 384px;
     top: 776px;
 }
 .letter_7{  /* о */
@@ -379,15 +383,27 @@ p {
 }
 #mini_queen{
     left: 267px;
+    animation: rotateFigure 2s infinite alternate ease-in-out;
 }
 #mini_king{
     left: 552px;
+    animation: rotateFigure 2s infinite alternate ease-in-out;
 }
 #mini_rook{
     left: 824px;
+    animation: rotateFigure 2s infinite alternate ease-in-out;
 }
 #mini_bishop{
     left: 1097px;
+    animation: rotateFigure 2s infinite alternate ease-in-out;
+}
+@keyframes rotateFigure {
+    0% {
+        transform: rotate(-12deg);
+    }
+    100% {
+        transform: rotate(12deg);
+    }
 }
 .end_name{
     position: absolute;
@@ -424,8 +440,9 @@ p {
     position: absolute;
     font-size: 42px;
     width: 255px;
-    left: 240px;
+    left: 225px;
     top: 125px;
+    text-align: center;
 }
 .eleven_october{
     position: absolute;
@@ -436,67 +453,68 @@ p {
 }
 .main_prize{
     position: absolute;
-    left: 214px;
+    left: 170px;
     width: 138px;
-    top: 345px;
+    top: 325px;
     font-size: 21px;
+    text-align: center;
 }
 .prize{
     position: absolute;
-    left: 294px;
-    top: 325px;
+    left: 325px;
+    top: 330px;
     font-size: 31px;
 }
 .afisha_text_1{
     position: absolute;
     font-size: 12px;
-    left: 269px;
+    left: 230px;
     top: 400px;
     width: 212px;
 }
 .entrance{
     position: absolute;
-    left: 248px;
-    top: 446px;
+    left: 225px;
+    top: 437px;
     font-size: 15px;
 }
 .entrance_price{
     position: absolute;
-    left: 461px;
-    top: 437px;
+    left: 420px;
+    top: 433px;
     font-size: 19px;
 }
 .afisha_text_2{
     position: absolute;
-    left: 275px;
-    top: 470px;
+    left: 230px;
+    top: 460px;
     width: 187px;
     font-size: 12px;
 }
 .place{
     position: absolute;
-    left: 105px;
-    top: 616px;
+    left: 40px;
+    top: 580px;
     font-size: 18px;
 }
 .afisha_text_3{
     position: absolute;
-    left: 181px;
-    top: 592px;
+    left: 115px;
+    top: 588px;
     font-size: 8px;
     font-style: italic;
 }
 .afisha_text_4{
     position: absolute;
-    left: 109px;
-    top: 652px;
+    left: 40px;
+    top: 615px;
     font-style: italic;
     font-size: 8px;
 }
 .afisha_text_5{
     position: absolute;
-    left: 271px;
-    top: 621px;
+    left: 200px;
+    top: 615px;
     font-size: 8px;
     font-style: italic;
 }
@@ -620,47 +638,47 @@ p {
     font-size: 30px;
 }
 .languages_1{
-    left: 801px;
+    left: 750px;
     top: 1813px;
     rotate: -72deg;
 }
 .languages_2{
-    left: 1223px;
+    left: 1215px;
     top: 1820px;
     rotate: -70deg;
 }
 .languages_3{
-    left: 933px;
-    top: 2050px;
+    left: 910px;
+    top: 2075px;
     rotate: -61deg;
 }
 
 .languages_4{
-    left: 1253px;
-    top: 2225px;
+    left: 1195px;
+    top: 2245px;
     rotate: 60deg;
 }
 .languages_5{
-    left: 710px;
-    top: 2340px;
+    left: 660px;
+    top: 2370px;
     rotate: 74deg;
 }
 .languages_6{
-    left: 1024px;
-    top: 2456px;
+    left: 1000px;
+    top: 2510px;
     rotate: -65deg;
 }
 .examples_rules_1{
     position: relative;
     left: 722px;
-    top: 46px;
+    top: -550px;
     width: 677px;
     height: 551px;
 }
 .examples_rules_2{
     position: relative;
     left: 51px;
-    top: 300px;
+    top: -400px;
     width: 604px;
     height: 527px;
 }
@@ -735,20 +753,20 @@ p {
 }
 .book_author_1{
     position: absolute;
-    left: 242px;
-    top: 34px;
+    left: 170px;
+    top: 50px;
     font-size: 15px;
     color: black;
 }
 .game{
     position: absolute;
-    left: 90px;
+    left: 60px;
     top: 69px;
     font-size: 100px;
 }
 .bones{
     position: absolute;
-    left: 81px;
+    left: 60px;
     top: 201px;
     font-size: 45px;
 }
@@ -759,30 +777,31 @@ p {
     width: 222px;
 }
 #font_book_1{
-    left: 96px;
-    top: 277px;
+    left: 75px;
+    top: 315px;
 }
 #font_book_2{
-    left: 85px;
-    top: 356px;
+    left: 75px;
+    top: 396px;
 }
 #font_book_3{
     left: 75px;
-    top: 437px;
+    top: 477px;
 }
 .book_author_2{
     position: absolute;
-    left: 23px;
-    top: 506px;
+    left: 30px;
+    top: 580px;
     width: 147px;
     font-size: 22px;
 }
 .book_for{
     position: absolute;
-    left: 21px;
-    top: 590px;
+    left: 35px;
+    top: 640px;
     font-size: 7px;
     color: black;
+    width: 1000px;
 }
 
 
